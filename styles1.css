@@ -1,0 +1,144 @@
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Ubah ke relative agar tidak tumpang tindih dengan main */
+    bottom: 0;
+}
+
+table {
+    width: 100%; /* Jadual memenuhi lebar container */
+    border-collapse: collapse; /* Hilangkan jarak antara border */
+    margin: 20px 0; /* Ruang atas dan bawah jadual */
+    font-size: 16px; /* Saiz teks */
+    position: relative;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border nipis antara sel */
+    padding: 10px; /* Ruang dalam sel */
+    text-align: center; /* Teks di tengah */
+    word-wrap: break-word; /* Bagi memastikan teks panjang terbalut */
+}
+
+th {
+    background-color: #f4f4f4; /* Warna latar untuk header */
+    font-weight: bold; /* Teks header tebal */
+}
+
+input[type="text"], input[type="date"] {
+    width: 90%; /* Input lebih kecil dalam sel */
+    padding: 5px; /* Ruang dalam input */
+    font-size: 14px; /* Saiz teks input */
+    box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar */
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px; /* Kurangkan saiz teks untuk skrin kecil */
+    }
+    input[type="text"], input[type="date"] {
+        width: 80%; /* Sesuaikan input untuk skrin kecil */
+    }
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pastikan seluruh halaman memiliki tinggi minimal viewport */
+}
+
+/* Header styles */
+header {
+    background-color: #003366; /* Dark blue background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 0;
+    background: #5885AF;
+    padding: 20px;
+    width: 25%;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: white; /* Ubah warna tulisan menjadi putih */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-size: 16px; /* Tambahan opsional: ubah ukuran font */
+    display: block; /* Tambahan opsional: buat area klik lebih besar */
+    padding: 10px 0; /* Tambahan opsional: beri ruang antar item */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Opsional: tambahkan underline saat hover */
+    color: #d1e7ff; /* Opsional: ubah warna saat hover */
+}
+
+main {
+    flex: 1; /* Isi utama mengambil ruang di tengah */
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
